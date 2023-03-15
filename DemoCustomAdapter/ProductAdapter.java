@@ -10,6 +10,10 @@ import java.util.ArrayList;
 public class ProductAdapter extends BaseAdapter {
     ArrayList<ProductDTO> listPro;
 
+    public ProductAdapter(ArrayList<ProductDTO> listPro) {
+        this.listPro = listPro;
+    }
+
     @Override
     public int getCount() {
         return listPro.size(); // trả về số lượng các phần tử có trong arraylist
